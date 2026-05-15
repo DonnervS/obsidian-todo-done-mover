@@ -8,6 +8,10 @@ einen `### Done`-Abschnitt derselben Notiz verschiebt.
 Die Plugin-Oberfläche richtet sich nach der Obsidian-Sprache: standardmäßig
 Englisch, Deutsch wenn Obsidian auf Deutsch eingestellt ist.
 
+## Demo
+
+![Das Plugin To-Do → Done Mover in Aktion](obsidian-done.gif)
+
 ## Funktionen
 
 - **Rechtsklick-Menü** im Editor:

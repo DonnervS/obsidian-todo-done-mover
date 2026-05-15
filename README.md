@@ -8,6 +8,10 @@ a `### Done` section of the same note.
 The plugin interface follows Obsidian's UI language: English by default,
 German when Obsidian is set to German.
 
+## Demo
+
+![The To-Do → Done Mover plugin in action](obsidian-done.gif)
+
 ## Features
 
 - **Right-click menu** in the editor:
