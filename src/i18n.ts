@@ -1,5 +1,5 @@
 // UI string localization. English is the default; German is used when
-// Obsidian's interface language is set to German.
+// Obsidian's interface language is German.
 
 export type Lang = "en" | "de";
 
@@ -56,18 +56,7 @@ const de: Strings = {
 
 const LANGUAGES: Record<Lang, Strings> = { en, de };
 
-/** Reads Obsidian's interface language; falls back to English. */
-export function detectLang(): Lang {
-	try {
-		const raw = (window.localStorage.getItem("language") || "").toLowerCase();
-		if (raw.startsWith("de")) return "de";
-	} catch {
-		// localStorage unavailable — fall through to English.
-	}
-	return "en";
-}
-
-/** Returns the UI strings for the given (or detected) language. */
-export function getStrings(lang: Lang = detectLang()): Strings {
+/** Returns the UI strings for the given language. */
+export function getStrings(lang: Lang): Strings {
 	return LANGUAGES[lang];
 }

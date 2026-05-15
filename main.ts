@@ -1,11 +1,20 @@
-import { Editor, MarkdownView, Notice, Plugin } from "obsidian";
+import { Editor, MarkdownView, Notice, Plugin, moment } from "obsidian";
 import { DEFAULT_SETTINGS, DoneMoverSettings, MoveOptions, MoveResult } from "./src/types";
 import { DoneMoverSettingTab } from "./src/settings";
 import { moveCompletedTasks, moveSelectedTasks } from "./src/mover";
-import { Strings, getStrings } from "./src/i18n";
+import { Lang, Strings, getStrings } from "./src/i18n";
 
 /** Delay before the auto mode reacts, so it does not interrupt typing. */
 const AUTO_MOVE_DEBOUNCE_MS = 400;
+
+/**
+ * Detects the UI language from Obsidian's locale (via the bundled moment
+ * instance, which Obsidian sets from the app language). Falls back to English.
+ */
+function detectLang(): Lang {
+	const locale = (moment.locale() || "en").toLowerCase();
+	return locale.startsWith("de") ? "de" : "en";
+}
 
 /** Returns today's local date as YYYY-MM-DD. */
 function formatToday(): string {
@@ -17,7 +26,7 @@ function formatToday(): string {
 export default class DoneMoverPlugin extends Plugin {
 	settings!: DoneMoverSettings;
 	/** Localized UI strings, resolved once at load time. */
-	strings: Strings = getStrings();
+	strings: Strings = getStrings(detectLang());
 	private autoTimer: number | null = null;
 
 	async onload() {
