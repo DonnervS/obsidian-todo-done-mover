@@ -1,0 +1,36 @@
+{
+	"name": "todo-done-mover",
+	"version": "1.0.0",
+	"description": "Obsidian plugin to move completed checkbox tasks into a Done section.",
+	"main": "main.js",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"test": "vitest run"
+	},
+	"keywords": [
+		"obsidian",
+		"plugin",
+		"todo",
+		"tasks"
+	],
+	"author": "wenzel1983",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DonnervS/obsidian-todo-done-mover.git"
+	},
+	"bugs": {
+		"url": "https://github.com/DonnervS/obsidian-todo-done-mover/issues"
+	},
+	"homepage": "https://github.com/DonnervS/obsidian-todo-done-mover#readme",
+	"devDependencies": {
+		"@types/node": "^20.11.0",
+		"builtin-modules": "^3.3.0",
+		"esbuild": "^0.20.2",
+		"obsidian": "latest",
+		"tslib": "^2.6.2",
+		"typescript": "^5.4.5",
+		"vitest": "^1.6.0"
+	}
+}
