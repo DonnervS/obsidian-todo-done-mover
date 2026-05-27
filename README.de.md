@@ -1,4 +1,4 @@
-# To-Do → Done Mover
+# To-Do to Done Mover
 
 Ein [Obsidian](https://obsidian.md)-Plugin, das erledigte Checkbox-Aufgaben –
 inklusive ihrer eingerückten Unteraufgaben – schnell aus einer To-Do-Liste in
@@ -10,7 +10,7 @@ Englisch, Deutsch wenn Obsidian auf Deutsch eingestellt ist.
 
 ## Demo
 
-![Das Plugin To-Do → Done Mover in Aktion](obsidian-done.gif)
+![Das Plugin To-Do to Done Mover in Aktion](obsidian-done.gif)
 
 ## Funktionen
 

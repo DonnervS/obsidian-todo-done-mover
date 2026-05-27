@@ -1,4 +1,4 @@
-# To-Do → Done Mover
+# To-Do to Done Mover
 
 An [Obsidian](https://obsidian.md) plugin that quickly moves completed
 checkbox tasks — including their indented sub-tasks — from a to-do list into
@@ -10,7 +10,7 @@ German when Obsidian is set to German.
 
 ## Demo
 
-![The To-Do → Done Mover plugin in action](obsidian-done.gif)
+![The To-Do to Done Mover plugin in action](obsidian-done.gif)
 
 ## Features
 

@@ -1,6 +1,6 @@
 {
 	"name": "todo-done-mover",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Obsidian plugin to move completed checkbox tasks into a Done section.",
 	"main": "main.js",
 	"scripts": {

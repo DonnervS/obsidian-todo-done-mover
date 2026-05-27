@@ -1,7 +1,7 @@
 {
 	"id": "todo-done-mover",
-	"name": "To-Do → Done Mover",
-	"version": "1.0.2",
+	"name": "To-Do to Done Mover",
+	"version": "1.0.3",
 	"minAppVersion": "1.0.0",
 	"description": "Move completed checkbox tasks (with their sub-tasks) into a Done section — via right-click, command, or automatically.",
 	"author": "wenzel1983",
